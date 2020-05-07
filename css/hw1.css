@@ -3,6 +3,7 @@ body{
   padding: 10px;
   font-size: medium;
 }
+
 header{
   background-color:rgba(123, 126, 131, 0.945);
   background-image: url("../images/flywheel.jpg");
@@ -10,6 +11,7 @@ header{
   background-size: cover;
   padding: 50px;
 }
+
 h1{
   color:#FFFFFF;
   text-transform: uppercase;
@@ -17,22 +19,25 @@ h1{
   font-size: xx-large;
   font-weight: bold;
 }
-
+/* Styling for box with pictures on the left side of the screen */
 .left{
   display: inline-block;
   box-sizing: border-box;
   width: 20%;
-  height: auto;
+  height: 100vh;
   background: rgb(115, 136, 101);
   float: left;
   text-align: center;
 }
+/* Styling for the text on the right side of the screen */
 .right{
   display: inline-block;
-  width: 70%; 
+  width: 75%; 
   padding-left: 20px;
+  
   float: left;
 }
+/* Styling for pictures in the box on the left side of the screen */
 .left img{
   border-style: groove;
   border-width: thick;
@@ -43,12 +48,15 @@ h1{
   vertical-align: middle;
   margin: 5%;
 }
+
 section{
   background: #FFFFFF;
 }
+/* All links in blue text */
 a{
   color: rgb(8, 23, 233);
 }
+/* Unique styling for links in the screen header */
 nav a{
   display: inline-block;
   border-radius: 10px;
@@ -62,10 +70,52 @@ nav a{
   width: 150px;
   background-color: rgba(252, 252, 252, 0.493) 
 }
+/* Styling for all links when active, hover, or focus */
 a:active, a:hover, a:focus{
   background: rgb(229, 233, 8); 
   color: #0000FF;
 }
+/* Styling for current page link (class="active") */
 .active{
   background-color: rgba(255, 0, 0, 0.63);
+}
+
+table{
+  font-family: cursive;
+  line-height: 30px;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+tr>th, tr>td{
+  padding: 10px 20px 10px 20px;
+}
+
+th{
+  color: #FFFFFF;
+  background-image: linear-gradient( rgba(23, 147, 196, 1), rgba(49, 68, 170, 0.938));
+  background-image: -webkit-linear-gradient( rgba(23, 147, 196, 1), rgba(49, 68, 170, 0.938));
+  background-image: -moz-linear-gradient( rgba(23, 147, 196, 1), rgba(49, 68, 170, 0.938));
+  background-image: -o-linear-gradient( rgba(23, 147, 196, 1), rgba(49, 68, 170, 0.938));border-style: solid;
+  border-color: #FFFFFF;
+  border-width: 0 0 2px 0;
+  border-radius: 5px 5px 0 0;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+td{
+  color: rgba(0,0,0,.7);
+  text-shadow: 2px 2px rgba(123, 126, 131, 0.75);
+  background-color: rgba(23, 147, 196, 0.603);
+  border-radius: 2px;
+}
+
+tr>th:first-child, tr>td:first-child{
+  text-align: left;
+}
+
+tr:hover td{
+  color: black;
 }
